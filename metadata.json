@@ -1,0 +1,7 @@
+{
+  "name": "Ntagawa Parfait - Professional Support Portfolio",
+  "description": "A modern, high-performance portfolio for Ntagawa Parfait, a Remote Chat Support Agent, featuring interactive projects, skill showcases, and a Gemini-powered support simulator.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
