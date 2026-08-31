@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useFrame, interpolate, Easing } from 'remotion';
+import { useCurrentFrame, interpolate, Easing } from 'remotion';
 
 interface Shape {
   id: number;
@@ -135,7 +135,7 @@ const Shape: React.FC<{ shape: Shape; frame: number; totalFrames: number }> = ({
 export const MotionGraphicScene: React.FC<{ totalFrames?: number }> = ({
   totalFrames = 300,
 }) => {
-  const frame = useFrame();
+  const frame = useCurrentFrame();
   const shapes = useMemo(() => generateRandomShapes(8), []);
 
   return (
